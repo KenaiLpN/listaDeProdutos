@@ -41,8 +41,9 @@
                         <H1 class="text-3xl font-bold">Product Sizes Item</H1>
                          <div class = "items-center gap-2 mb-4">
                             <input id="botaoPesquisa" type="text" placeholder="Pesquisar..." class="bg-gray-200 p-2 rounded" onkeyup="filtrarProdutos()">
-                            <input id="precoMin" type="text" placeholder="Min" class="bg-gray-200 p-2 rounded ml-30 w-30" onkeyup="filtroPreco()">
-                            <input id="precoMax" type="text" placeholder="Máx" class="bg-gray-200 p-2 rounded  w-30">
+                            <input id="precoMin" type="number" placeholder="Min" class="bg-gray-200 p-2 rounded ml-30 w-30">
+                            <input id="precoMax" type="number" placeholder="Máx" class="bg-gray-200 p-2 rounded  w-30">
+                            <button onclick="filtroPreco()" class="bg-gray-200 p-2 rounded hover:bg-blue-200">Lupa</button>
                             
                         </div>
                         

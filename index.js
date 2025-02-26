@@ -65,11 +65,13 @@ async function consumirProdutos() {
     }
      
     function filtroPreco(){
-        const precoMin = document.getElementById("precoMin").value.toString()
-        const precoMinfiltrado = produtosGlobal.filter(produto =>
-            produto.price.toString().includes(precoMin)
-        )
+        const precoMin = parseFloat(document.getElementById("precoMin").value);
+        const precoMax = parseFloat(document.getElementById("precoMax").value);
 
+        const produtosFiltrados = produtosGlobal.filter(produto =>
+        (isNaN(precoMin) || produto.price >= precoMin) && (isNaN(precoMax) || produto.price <= precoMax)
+        )
+          atualizarTabela(produtosFiltrados);
     }
 
 
