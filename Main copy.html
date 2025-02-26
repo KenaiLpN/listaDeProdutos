@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <script src="./index.js"></script>
+    <main class="flex col-2 min-h-screen">
+        <div>
+            <nav class="flex justify-left bg-[#1F2020] h-screen w-70 flex flex-col">
+                <button class="text-white ml-55 text-2xl mt-5 p-1 h-10 w-10 font-bold hover:bg-red-600">X</button>
+
+                <div class="flex flex-col item-center justify-center mt-4">
+                    <img class="h-35 w-35 ml-18 mt-5 mb-10" src="pngwing.com.png" alt=".">
+                    <h1 class="text-white font-bold text-2xl ml-16">Hello, Admin</h1>
+                </div>
+                <ul class="flex flex-col gap-4 py-4">
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Dashboard</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Customers</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Category</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Sizes</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Product Sizes</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Products</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Orders</button></li>
+                </ul>
+
+            </nav>
+        </div>
+       <section class="flex-1">
+        <div>
+       
+            <div class="flex flex-col bg-[#1F2020] w-full h-full">
+                <h1 class="bg-[#1F2020] h-20">a</h1>
+                <div class="bg-white">
+                
+                    <div class="flex flex-col w-400 h-200 box-border p-4 gap-3 mt-3">
+                        <H1 class="text-3xl font-bold">Product Sizes Item</H1>
+                      <div class="flex flex-col rounded shadow-2xl">
+                        <table>
+                            <thead class="bg-[#564E45] h-10">
+                              <tr>
+                                <th class= text-white >S.N.</th>
+                                <th class= text-white >Product Name</th>
+                                <th class= text-white >Size</th>
+                                <th class= text-white >Stock Quantity</th>
+                                <th class= text-white >Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="h-15 even:bg-gray-200">
+                                <td class="text-center">1</td>
+                                <td class="text-center">Off Shoulder Crop Top</td>
+                                <td class="text-center">L</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">
+                                    <button class="p-2 bg-sky-500 hover:bg-sky-600 text-white rounded-[6px] font-bold">Edit</button>
+                                    <button class="ml-15 p-2 bg-red-500 hover:bg-red-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 text-white font-bold rounded-[6px] ">
+                                        Delete
+                                    </button>
+                                </td>
+                              </tr>
+
+                              <tr class="h-15 even:bg-gray-200">
+                                <td class="text-center">1</td>
+                                <td class="text-center">Off Shoulder Crop Top</td>
+                                <td class="text-center">L</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">
+                                    <button class="p-2 bg-sky-500 hover:bg-sky-600 text-white rounded-[6px] font-bold">Edit</button>
+                                    <button class="ml-15 p-2 bg-red-500 hover:bg-red-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 text-white font-bold rounded-[6px] ">
+                                        Delete
+                                    </button>
+                                </td>
+                              </tr>
+
+                              <tr class="h-15 even:bg-gray-200">
+                                <td class="text-center">1</td>
+                                <td class="text-center">Off Shoulder Crop Top</td>
+                                <td class="text-center">L</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">
+                                    <button class="p-2 bg-sky-500 hover:bg-sky-600 text-white rounded-[6px] font-bold">Edit</button>
+                                    <button class="ml-15 p-2 bg-red-500 hover:bg-red-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 text-white font-bold rounded-[6px] ">
+                                        Delete
+                                    </button>
+                                </td>
+                              </tr>
+
+                              <tr class="h-15 even:bg-gray-200">
+                                <td class="text-center">1</td>
+                                <td class="text-center">Off Shoulder Crop Top</td>
+                                <td class="text-center">L</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center">
+                                    <button class="p-2 bg-sky-500 hover:bg-sky-600 text-white rounded-[6px] font-bold">Edit</button>
+                                    <button class="ml-15 p-2 bg-red-500 hover:bg-red-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 text-white font-bold rounded-[6px] ">
+                                        Delete
+                                    </button>
+                                </td>
+                              </tr>
+                             
+                        
+                           
+                         
+                            </tbody>
+                          </table>
+                        </div>
+                        </div>
+                        
+                             
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       </section>
+    </main>
+</body>
+</html>
