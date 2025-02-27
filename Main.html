@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <script src="./index.js"></script>
+    <script src="./index.js"></script> <!-- puxa o codigo JavaScript do arquivo indicado-->
     <main class="flex col-2 min-h-screen">
         <div>
             <nav class="flex justify-left bg-[#1F2020] h-screen w-70 flex flex-col">
@@ -18,14 +18,15 @@
                     <img class="h-35 w-35 ml-18 mt-5 mb-10" src="pngwing.com.png" alt=".">
                     <h1 class="text-white font-bold text-2xl ml-16">Hello, Admin</h1>
                 </div>
+                
                 <ul class="flex flex-col gap-4 py-4">
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Dashboard</button></li>
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Customers</button></li>
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Category</button></li>
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Sizes</button></li>
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Product Sizes</button></li>
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Products</button></li>
-                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Orders</button></li>
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Dashboard</button></li>       <!-- Menus da barra lateral -->
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Customers</button></li>       <!-- Menus da barra lateral -->
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Category</button></li>        <!-- Menus da barra lateral -->
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Sizes</button></li>           <!-- Menus da barra lateral -->
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Product Sizes</button></li>   <!-- Menus da barra lateral -->
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Products</button></li>        <!-- Menus da barra lateral -->
+                    <li class="text-bold text-white text-2xl text-center p-1"><button class="w-full h-full hover:bg-gray-700">Orders</button></li>          <!-- Menus da barra lateral -->
                 </ul>
 
             </nav>
@@ -40,15 +41,15 @@
                     <div class="flex flex-col w-400 h-200 box-border p-4 gap-3 mt-3">
                         <H1 class="text-3xl font-bold">Product Sizes Item</H1>
                          <div class = "items-center gap-2 mb-4">
-                            <input id="botaoPesquisa" type="text" placeholder="Pesquisar..." class="bg-gray-200 p-2 rounded" onkeyup="filtrarProdutos()">
-                            <input id="precoMin" type="number" placeholder="Min" class="bg-gray-200 p-2 rounded ml-30 w-30">
-                            <input id="precoMax" type="number" placeholder="Máx" class="bg-gray-200 p-2 rounded  w-30">
-                            <button onclick="filtroPreco()" class="bg-gray-200 p-2 rounded hover:bg-blue-200">Lupa</button>
+                            <input id="botaoPesquisa" type="text" placeholder="Pesquisar..." class="bg-gray-200 p-2 rounded" onkeyup="filtrarProdutos()"> <!-- Campo de pesquisa de produtos -->
+                            <input id="precoMin" type="number" placeholder="Min" class="bg-gray-200 p-2 rounded ml-30 w-30"> <!-- Campo de pesquisa de preço Mínimo-->
+                            <input id="precoMax" type="number" placeholder="Máx" class="bg-gray-200 p-2 rounded  w-30"> <!--Campo de pesquisa de preço Mãximo -->
+                            <button onclick="filtroPreco()" class="bg-gray-200 p-2 rounded hover:bg-blue-200">Lupa</button> <!-- botão para efetivar o filtro de preços -->
                             
                         </div>
                         
                       <div class="flex flex-col rounded shadow-2xl">
-                        <table>
+                        <table> <!-- Cabeçalho da tabela -->
                             <thead class="bg-[#564E45] h-10">
                               <tr>
                                 <th class= "text-white" >ID</th>
